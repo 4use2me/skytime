@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+		.mask-custom {
+            backdrop-filter: blur(500px);
+            background-color: rgba(255, 255, 255, .15);
+		}
+		.navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+		}
+		body {
+			background: url(images/bg.jpg);
+			background-color: rgba(250, 182, 162, 0.15);
+            color: #adb5bd;
+		}
+        .text-muted{
+            color: #adb5bd!important;
+        }
+        a {
+            text-decoration: none;
+        }
+        .card {
+            color: #adb5bd; 
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <!-- Navbar -->
+		<nav class="navbar navbar-expand-xl navbar-dark fixed-top mask-custom shadow-0">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><span style="color: #ffffff;">Sky</span><span style="color: #f11414;">Time</span></a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+				data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto" style="font-size: large;">
+						<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="shop.html">Shop</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center">
+                        <button class="btn btn-secondary  px-3 me-3" data-bs-target="#LoginModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            Login
+                        </button>
+					</div>
+				</div>
+			</div>
+		</nav>
+        <!-- Navbar End -->
+	</header>  
+    <!-- Login Modal-->
+    <div class="modal fade" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color: #e0e1e4;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="LoginModalToggleLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-flex justify-content-end mt-2">
+                    <button class="btn btn-secondary">
+                        Login
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Login Modal End-->
+    <!-- Main Story -->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">TUULI TUUL</h4>
+                                <p>Training Commander</p>
+                                <br>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 111</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:tuuli.tuul@skytime.com">tuuli.tuul@skytime.com</a></p>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">TAAVI TAEVAS</h4>
+                                <p>President</p>
+                                <br>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 113</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:taavi.taevas@skytime.com">taavi.taevas@skytime.com</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">PAAVO PILV</h4>
+                                <p>Chief of Aviation</p>
+                                <br>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 112</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:paavo pilv@skytime.com">paavo.pilv@skytime.com</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">PIIA PÄIKE</h4>
+                                <p>Marketing Manager</p>
+                                <br>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 115</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:piia.paike@skytime.com">piia.paike@skytime.com</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">PEETER KÕU</h4>
+                                <p>Security Chief</p>
+                                <br>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 114</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:peeter.kou@skytime.com">peeter.kou@skytime.com</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-5 mt-5">
+                <div class="card bg-transparent" style="border: transparent;">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/pilt.png" alt="" align="left" style="border-radius: 50%;">
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <div>
+                                <h4 class="justify-content-center">INFO</h4>
+                                <p>Rataskaevu 39/1, 19094 Tallinn
+                                <a href="#locationModal" data-bs-toggle="modal" data-bs-target="#locationModal" style="color: #adb5bd;">View Location</a></p>
+                                <p class="mb-0"><i class="fas fa-phone-alt"></i> Tel: 111 110</p>
+                                <p class="mb-0"><i class="fas fa-envelope"></i> <a href="mailto:info@skytime.com">info@skytime.com</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+    <!-- Location Modal -->
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content" style="background-color: #e0e1e4;">
+            <div class="modal-header">
+            <h5 class="modal-title" id="locationModalLabel">Location</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <iframe width="100%" height="600px" frameboarder="0" scrolling="0" marginheight="0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2028.794734809117!2d24.737516895914965!3d59.43649793712184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692936278149211%3A0xeb35f75e8539ca9d!2sRataskaevu%2039-1%2C%2010123%20Tallinn!5e0!3m2!1set!2see!4v1712091207441!5m2!1set!2see"
+                    width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Location Modal End -->
+    <!-- Main Story End-->
+    <!-- Footer-->
+	<footer class="mask-custom mt-auto" style="color: #adb5bd;">
+		<div class="text-center p-4">
+		  © 2024 Copyright: SkyTime
+		</div>
+	</footer>
+    <!-- Footer End-->
+</body>
+</html>

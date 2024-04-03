@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/icons8-parachute-cord-50 (1).png">
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+		.mask-custom {
+            backdrop-filter: blur(500px);
+            background-color: rgba(255, 255, 255, .15);
+		}
+		.navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+		}
+		body {
+			background: url(images/bg.jpg);
+			background-color: rgba(250, 182, 162, 0.15);
+            color: #adb5bd;
+		}
+        .text-muted{
+            color: #adb5bd!important;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <!-- Navbar -->
+		<nav class="navbar navbar-expand-xl navbar-dark fixed-top mask-custom shadow-0">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><span style="color: #ffffff;">Sky</span><span style="color: #f11414;">Time</span></a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+				data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto" style="font-size: large;">
+						<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="shop.html">Shop</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center">
+                        <button class="btn btn-secondary  px-3 me-3" data-bs-target="#LoginModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            Login
+                        </button>
+					</div>
+				</div>
+			</div>
+		</nav>
+        <!-- Navbar End -->
+	</header>  
+    <!-- Login Modal-->
+    <div class="modal fade" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color: #e0e1e4;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="LoginModalToggleLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-flex justify-content-end mt-2">
+                    <button class="btn btn-secondary">
+                        Login
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Login Modal End-->
+    <!-- Cart Modal -->
+    <div class="container p-5 mt-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="images/tandem1.jpg">
+                    <div class="card-body">
+                        <div class="small text-muted">01. April 2024</div>
+                        <h2 class="card-title">In the first week of July, you can jump with a parachute in Kihnu</h2>
+                        <p class="card-text" style="text-align: justify;">
+                            On 1-6 July, the Estonian Parachute Club's training camp will take place on the 
+                            island of Kihnu, during which kihnans and visitors to the island will also have 
+                            the opportunity to try out the tandem jump with an experienced parachute 
+                            instructor. The Estonian Parachute Club, which usually operates at Rapla 
+                            airfield, will move to Kihnu on the evening of Friday, June 30. The first 
+                            paratroopers will land at Kihnu airfield around 19:00 on Friday, in case of 
+                            suitable weather, jumping out of the plane that took off from the mainland. 
+                            The island is jumping for a week in a row and...
+                        </p>
+                        <div class="d-flex justify-content-end mt-2">
+                            <button class="btn btn-outline-secondary">Read more →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">             
+                <div class="card mb-4">
+                    <div class="card-header">Recent Posts</div>
+                    <div class="card-body" style="text-align: justify;">
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                In the first week of July, you can jump with a parachute in Kihnu
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                            01. April 2024
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Training camps in the 2024 season
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                            04. March 2024
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Beginners’ courses in English in 2024
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        05. February 2024
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Registration for courses and jumps for the 2024 season is open
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        01. Januuary 2024
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                    </div>
+                </div>            
+                <div class="card mb-4">
+                    <div class="card-header">Archive</div>
+                    <div class="card-body" style="text-align: justify;">
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                The 2023 jumping season set several records
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                            13. November 2023
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                An unforgettable parachute tandem jump from a height of 4km with a VIP!
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                            04. July 2023
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                International parachute camp Parasummer
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        05. May 2023
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Open registration for the 2023 season
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        05. March 2023
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Canopy Formation (CF) Initial Training/Camp
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        02. August 2022
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none; color: black;">
+                                Open registration for the 2022 season
+                                <div class="row text-muted border-bottom">
+                                    <div class="col d-flex flex-row-reverse">
+                                        05. March 2022
+                                    </div>
+                                </div>                             
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Footer -->
+    </div>	<footer class="mask-custom mt-auto" style="color: #adb5bd;">
+		<div class="text-center p-4">
+		  © 2024 Copyright: SkyTime
+		</div>
+	</footer>
+    <!-- Footer end -->
+</body>
+</html>

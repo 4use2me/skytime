@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="icon" type="image/x-icon" href="images/icon.png">
+    <style>
+		.mask-custom {
+            backdrop-filter: blur(500px);
+            background-color: rgba(255, 255, 255, .15);
+		}
+		.navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 3px;
+		}
+		body {
+			background: url(images/bg.jpg);
+			background-color: rgba(250, 182, 162, 0.15);
+            color: #adb5bd;
+		}
+        .text-muted{
+            color: #adb5bd!important;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <!-- Navbar -->
+		<nav class="navbar navbar-expand-xl navbar-dark fixed-top mask-custom shadow-0">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><span style="color: #ffffff;">Sky</span><span style="color: #f11414;">Time</span></a>
+				<button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+				data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto" style="font-size: large;">
+						<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="shop.html">Shop</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center">
+                        <button class="btn btn-secondary  px-3 me-3" data-bs-target="#LoginModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">
+                            Login
+                        </button>
+					</div>
+				</div>
+			</div>
+		</nav>
+        <!-- Navbar End -->
+	</header>  
+    <!-- Login Modal-->
+    <div class="modal fade" id="LoginModalToggle" aria-hidden="true" aria-labelledby="LoginModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content" style="background-color: #e0e1e4;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="LoginModalToggleLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="d-flex justify-content-end mt-2">
+                    <button class="btn btn-secondary">
+                        Login
+                    </button>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Login Modal End-->
+    <!-- Main story -->
+    <div class="container col-9 mt-5 pt-5">
+        <div class="row">
+            <div class="col-3">
+                <div style="text-align: justify;">
+                    <p><b>The Parachute Club is a non-profit organization founded in 2021 with the 
+                        aim of creating the best jumping conditions and development opportunities 
+                        for its members, as well as promoting the sport of parachuting. Below you 
+                        will find the answer to the question of why a beginner parachuting 
+                        enthusiast should choose our club?</b></p>
+                    <br>
+                    <br>
+                    <p><b>Highly experienced instructors</b></p>
+                    <p>The parachute club's ranks include more than a dozen instructors, all of 
+                        whom have jumps between 500 and 2800 behind their backs.</p>
+                </div>
+            </div>
+            <div class="col-9">
+                <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/exit.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/hybrid.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/maandumine.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/me.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>                  
+            </div>
+            <div class="col-12">
+                <div style="text-align: justify;">
+                    <p><b>Very good jumping plane </b></p>
+                    <p>Built in 2016 and specially adapted for skydiving, the Pilatus PC-6 Porter, 
+                        which takes ten paratroopers to a height of four kilometers in just 15 
+                        minutes.</p>
+                    <p><b>Security and safety</b></p>
+                    <p>The parachute club conducts only jumping trainings with square sports 
+                        parachutes. Square sports parachutes are manageable and landing with 
+                        them is soft when using the right landing technique. If done correctly, 
+                        the probability of injury with square sports parachutes is significantly 
+                        less than with round parachutes.</p>
+                    <p>The airworthiness requirements and maintenance procedures for parachutes are 
+                        set out in the Parachute Club's Parachuting Operations Manual approved by the 
+                        Civil Aviation Administration. Each parachute set is subjected to a thorough 
+                        inspection once a year, plus ongoing inspections if necessary.</p>
+                    <p><b>The best development option for a paratrooper</b></p>
+                    <p>The parachute club has de facto the widest knowledge of parachuting sports in 
+                        Estonia. We fully support your future development as a paratrooper by organising 
+                        in-service trainings (which are free of charge for club members!) and bringing 
+                        world-class coaches to Estonia.</p>
+                    <p><b>We don't do business</b></p>
+                    <p>The parachute club is a non-profit organization in both form and content. Our goal 
+                        is not to make a profit, but to create better jumping conditions and opportunities 
+                        for club members. We do not have an owner and we direct all the money earned to the 
+                        maintenance and development of the club's aircraft and infrastructure. The club 
+                        team does things out of joy and love for the sport of parachuting, not for money.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+	<footer class="mask-custom mt-auto" style="color: #adb5bd;">
+		<div class="text-center p-4">
+		  © 2024 Copyright: SkyTime
+		</div>
+	</footer>
+    <!-- Footer end -->
+</body>
+</html>
